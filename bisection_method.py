@@ -2,8 +2,8 @@ import numpy as np
 import math
 
 def f(x):
-    x**3+4*x**2-10
-
+    return x**3+4*x**2-10
+    
 def bisection(a, b, tol, maxiter):
     FA = f(a)
     i = 1
@@ -12,7 +12,7 @@ def bisection(a, b, tol, maxiter):
         FP = f(p)
         if FP == 0 or (b-a)/2 < tol:
             return(p)
-        n += 1
+        i += 1
         if FA*FP>0:
             a = p
             FA = FP
