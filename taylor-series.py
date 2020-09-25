@@ -1,4 +1,3 @@
-import numpy as np
 import math
 
 def taylor(x, tol, m):
