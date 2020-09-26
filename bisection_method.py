@@ -8,7 +8,7 @@ def bisection(a, b, tol, maxiter):
         p=a+(b-a)/2
         FP = f(p)
         if FP == 0 or (b-a)/2 < tol:
-            return(p)
+            return i,p
         i += 1
         if FA*FP>0:
             a = p
