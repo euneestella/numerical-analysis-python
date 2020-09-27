@@ -1,12 +1,10 @@
 import math
-import sympy
-
 
 def f(x):
     return math.cos(x)-x
 
 def g(x):
-    return sympy.diff(f(x))
+    return -math.sin(x)-1
 
 def newton(initial, tol, maxiter):
     i = 1
