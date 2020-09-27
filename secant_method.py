@@ -10,7 +10,7 @@ def secant(approx1, approx2, tol, maxiter):
     while i <= maxiter:
         approx = approx2 - approxval2*(approx2-approx1)/(approxval2 - approxval1)
         if abs(approx-approx2) < tol:
-            return approx
+            return (approx, i)
         i+=1
         approx1 = approx2
         approxval1 = approxval2
