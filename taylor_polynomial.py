@@ -11,6 +11,6 @@ def taylor(x, tol, m):
         power = power*y
         term = power/(n+1)
         if abs(term)<tol:
-            return n, summation
+            return (n, summation)
         n+=1
-    return n, summation
+    print("unsuccessful")
