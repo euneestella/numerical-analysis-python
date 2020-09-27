@@ -11,7 +11,7 @@ def newton(initial, tol, maxiter):
     while i <= maxiter:
         approx = initial - f(initial)/g(initial)
         if abs(approx - initial) < tol:
-            return approx
+            return (approx, i)
         i += 1
         initial = approx
     return ("unsuccessful after", maxiter)
