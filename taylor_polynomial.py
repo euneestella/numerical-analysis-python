@@ -6,7 +6,7 @@ def taylor(x, tol, m):
     term = y
     sign = -1
     while n <= m :
-        sign -= sign
+        sign = -sign
         summation = summation+sign*term
         power = power*y
         term = power/(n+1)
