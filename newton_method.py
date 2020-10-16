@@ -1,10 +1,10 @@
 import math
 
 def f(x):
-    return math.cos(x)-x
+    return math.exp(6*x)+1.441*math.exp(2*x)-2.079*math.exp(4*x)-0.3330
 
 def g(x):
-    return -math.sin(x)-1
+    return 6*math.exp(6*x)+2*1.441*math.exp(2*x)-4*2.079*math.exp(4*x)
 
 def newton(initial, tol, maxiter):
     i = 1
