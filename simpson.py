@@ -1,4 +1,3 @@
-from sympy import *
 import math
 
 def simpson(a,b,n):
